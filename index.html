@@ -1,114 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipkart</title>
+    <title>FlipKart</title>
 </head>
 <script src="https://kit.fontawesome.com/462fed6752.js" crossorigin="anonymous"></script>
 <style>
-    .main {
-        height: 1200px;
-        width: 100%;
-        background-color: rgb(216, 229, 240);
+    .main{
+        height:1200px;
+        width:100%;
+        background-color: rgb(224, 220, 214);
     }
-
-    .head {
+    .head{
         width: 100%;
-        height: 100px;
-        background-color: rgb(61, 61, 234);
+        height: 60px;
+        background-color: rgb(53, 101, 214);
+        background-size: 100%;
+      
     }
-
-    .lcol {
-        float: left;
+    .lcol{
+        height: 60px;
         width: 60%;
-        height: 65px;
+        float: left;
     }
-
-    .searchBar {
+    .rcol{
+        width: 40%;
+        height: 60px;
         float: right;
-        width: 80%;
-
     }
-
-    .logo {
+    .logo{
         width: 20%;
         float: left;
     }
-
-    .bar {
+    #i1{
+        margin-top: 10px;
+        position: absolute;
+        left:65px ;
+    }
+    .p{
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+    #p2{
+        position: absolute;
+        top: 25px;
+        left: 105px;
+        font-size: 14px;
+    }
+    #p1{
+        position: absolute;
+        top: 25px;
+        left: 55px;
+        font-size: 14px;
+    }
+    #i2{
+        position: absolute;
+        top: 40px;
+        left:135px;
+    }
+    .box{
         height: 34px;
         width: 500px;
-        float: left;
+        float:right;
         background-color: rgb(232, 236, 241);
         border-radius: 6px;
         margin-top: 1.9%;
         position: relative;
         right: 55px;
     }
-
-    .box p {
+    .seai{
+        float: left;
+        position: relative;
+        margin-top: 3.5%;
+        margin-left: 2%;
+    }
+    .box p{
         float: left;
         position: relative;
         left: 18px;
         bottom: 10px;
     }
-
-    #pr1 {
-        position: absolute;
-        top: 27px;
-        left: 65px;
-        font-size: 14px;
+    .seller{
+        float: left;
+        width: 32%;
+        position: relative;
     }
-
-    #pr2 {
-        position: absolute;
-        top: 27px;
-        left: 115px;
-        font-size: 14px;
+    .seller i{
+        float: left;
+        margin-top: 28px;
+        margin-left:5px;
     }
-
-    #img1 {
-        left: 65px;
-        position: absolute;
+    .login{
+        float: left;
+        width: 25%;
+        position: relative;
+    }
+    .login i{
+        float: left;
+        margin-top: 28px;
+        margin-left:40px;
+    }
+    .cart{
+        float: left;
+        width: 25%;
+        position: relative;
+    }
+    .cart i{
+        float: left;
+        margin-top: 30px;
+        margin-left:40px;
+    }
+    .options{
+        float: right;
+        width: 10%;
+        position: relative;
+    }
+   .options i{
+        float: right;
+        margin-top: 30px;
+        margin-right:50px;
+    }
+    .product{
+        margin-top: 5px;
+        width: 100%;
+        height: 150px;
+        background-color: #ffffff;
+    }
+    .prod1{
+        width: 10%;
+        background-color: #ffffff;
+        float: left;
+        position: relative;
+        margin-left: 3px;
+    }
+    .prod2{
+        width: 10%;
+        background-color: #ffffff;
+        float: left;
+        position: relative;
+        margin-left: 10px;
+    }
+    .prod3{
+        width: 10%;
+        background-color: #ffffff;
+        float: left;
+        position: relative;
+        margin-left: 10px;
+    }
+    .prod4{
+        width: 10%;
+        background-color: #ffffff;
+        float: left;
+        position: relative;
+        margin-left: 10px;
+    }
+    .prod5{
+        width: 10%;
+        background-color: #ffffff;
+        float: left;
+        position: relative;
+        margin-left: 10px;
+    }
+    .prod6{
+        width: 10%;
+        background-color: #ffffff;
+        float: left;
+        position: relative;
+        margin-left: 10px;
+    }
+    .prod7{
+        width: 10%;
+        background-color: #ffffff;
+        float: left;
+        position: relative;
+        margin-left: 10px;
+    }
+    .prod8{
+        width: 10%;
+        background-color: #ffffff;
+        float: left;
+        position: relative;
+        margin-left: 10px;
+    }
+    .prod9{
+        width: 10%;
+        background-color: #ffffff;
+        float: left;
+        position: relative;
+        margin-left: 10px;
+    }
+    .banner{
         margin-top: 15px;
+        border-radius: 2px;
+    }
+    .offers{
+        margin-top: 2px;
+        background-color: #ffffff;
+        height: 280px;
+        width: 100%;
+    }
+    .off1{
+        margin-left:13px;
+        float: left;
+        width: 13%;
+        height: 220px;
+        border-radius: 5px;
+        border: solid;
+        border-width: 1px;
+        border-color: #cbcccf;
+    }
+    .off2{
+        margin-left:12px;
+        float: left;
+        width: 13%;
+        height: 220px;
+        border-radius: 5px;
+        border: solid;
+        border-width: 1px;
+        border-color: #cbcccf;
+    }
+    .off3{
+        margin-left:12px;
+        float: left;
+        width: 13%;
+        height: 220px;
+        border-radius: 5px;
+        border: solid;
+        border-width: 1px;
+        border-color: #cbcccf;
+    }
+    .off4{
+        margin-left:12px;
+        float: left;
+        width: 13%;
+        height: 220px;
+        border-radius: 5px;
+        border: solid;
+        border-width: 1px;
+        border-color: #cbcccf;
+    }
+    .off5{
+        margin-left:12px;
+        float: left;
+        width: 13%;
+        height: 220px;
+        border-radius: 5px;
+        border: solid;
+        border-width: 1px;
+        border-color: #cbcccf;
+    }
+    .off6{
+        margin-left:12px;
+        float: left;
+        width: 13%;
+        height: 220px;
+        border-radius: 5px;
+        border: solid;
+        border-width: 1px;
+        border-color: #cbcccf;
+    }
+    .off7{
+        margin-left:14px;
+        float: left;
+        width: 13%;
+        height: 220px;
+        border-radius: 5px;
+        border: solid;
+        border-width: 1px;
+        border-color: #cbcccf;
     }
 
-    #img2 {
-        position: absolute;
-        top: 43px;
-        left: 141px;
+    .end{
+        margin-top: 24px;
+        background-color: rgb(32, 31, 31);
+        width: 100%;
+        height: 400px;
     }
 </style>
-
 <body>
     <div class="main">
         <div class="head">
-            <div class="leftCol">
+            <div class="lcol">
                 <div class="logo">
-                    <img id="img1"
-                        src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
-                        height="22px">
-                    <p id="pr1" style="color: rgba(172, 171, 159, 0.918);">Explore</p>
-                    <p id="pr2" style="color: rgba(225, 209, 34, 0.918);">Plus</p>
-                    <img id="img2"
-                        src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
-                        height="12px">
+                    <img id="i1" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" height="22px">
+                    <p id="p1" style="color: rgba(172, 171, 159, 0.918);">Explore</p>
+                    <p id="p2" style="color: rgba(225, 209, 34, 0.918);">Plus</p>
+                    <img id="i2" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" height="12px">
                 </div>
-                <div class="searchBar">
-                    <div class="bar">
+                <div class="search">
+                    <div class="box">
                         <i class="fa-solid fa-magnifying-glass fa-lg seai" style="color: #6b6f76;"></i>
                         <p style="color:#6b6f76 ;font-size: 18px;">Search for Products, Brands & More</p>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="rcol">
+                <div class="seller">
+                    <i class="fa-solid fa-shop fa-lg" style="color: #ffffff;"></i>
+                    <p style="color:#ffffff; margin-top: 20px; float: left; margin-left:11px;">   Become a Seller</p>
+                </div>
+                <div class="login">
+                    <i class="fa-regular fa-user fa-lg" style="color: #ffffff;"></i>
+                    <p style="color:#ffffff; margin-top: 20px; float: left; margin-left:11px; font-size:;">Sign in</p>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;"></i>
+                    <p style="color:#ffffff; margin-top: 20px; float: left; margin-left:11px;">Cart</p>
+                </div>
+                <div class="options">
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
 
+        <div class="product">
+            <div class="prod1">
+                <img src="https://rukminim1.flixcart.com/flap/96/96/image/29327f40e9c4d26b.png?q=100" style="margin-top: 14px;margin-left: 40px;">
+                <p style="margin-top:2.5px;position: relative; left:52px;">Grocery</p>
+            </div>
+            <div class="prod2">
+                <img src="https://rukminim1.flixcart.com/flap/96/96/image/69c6589653afdb9a.png?q=100" style="margin-top: 14px;margin-left: 35px;">
+                <p style="margin-top:2.5px;position: relative; left:52px;">Laptops</p>
+            </div>
+            <div class="prod3">
+                <img src="https://rukminim1.flixcart.com/flap/96/96/image/22fddf3c7da4c4f4.png?q=100" style="margin-top: 14px;margin-left: 35px;">
+                <p style="margin-top:2.5px;position: relative; left:52px;">Phones</p>
+            </div>
+            <div class="prod4">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/0d75b34f7d8fbcb3.png?q=100" style="margin-top: 14px;margin-left: 35px;">
+                <p style="margin-top:2.5px;position: relative; left:52px;">Fashion</p>
+            </div>
+            <div class="prod5">
+                <img src="https://rukminim1.flixcart.com/flap/96/96/image/ab7e2b022a4587dd.jpg?q=100" style="margin-top: 14px;margin-left: 35px;">
+                <p style="margin-top:2.5px;position: relative; left:52px;">Furniture</p>
+            </div>
+            <div class="prod6">
+                <img src="https://rukminim1.flixcart.com/flap/96/96/image/0ff199d1bd27eb98.png?q=100" style="margin-top: 14px;margin-left: 35px;">
+                <p style="margin-top:2.5px;position: relative; left:52px;">Electronics</p>
+            </div>
+            <div class="prod7">
+                <img src="https://rukminim1.flixcart.com/flap/96/96/image/71050627a56b4693.png?q=100" style="margin-top: 14px;margin-left: 35px;">
+                <p style="margin-top:2.5px;position: relative; left:65px;">Flight</p>
+            </div>
+            <div class="prod8">
+                <img src="https://rukminim1.flixcart.com/flap/96/96/image/dff3f7adcf3a90c6.png?q=100" style="margin-top: 14px;margin-left: 35px;">
+                <p style="margin-top:2.5px;position: relative; left:67px;">Toys</p>
+            </div>
+            <div class="prod9">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/96/96/image/05d708653beff580.png?q=100" style="margin-top: 14px;margin-left: 35px;">
+                <p style="margin-top:2.5px;position: relative; left:60px;">Vehicle</p>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/eb50a8b740d3234f.jpg?q=80" width="100%">
+        </div>
+
+        <div class="offers">
+            <p style="font-size: 20px;position: relative; top: 10px; left: 18px;"><b>Top Offers</b> </p>
+            <div class="off1">
+                <img src="https://rukminim1.flixcart.com/image/170/170/xif0q/shoe/9/t/r/-original-imaghhnxffhfbygp.jpeg?q=90" style="position: relative;top:6px;left:15px;" height="160px">
+                <p style="text-align: center;">NIKE <br><b>Min 40-50% Off</b></p>
+            </div>
+            <div class="off2">
+                <img src="https://rukminim1.flixcart.com/image/340/340/xif0q/shoe/h/a/k/-original-imagfyy3pzjhrbrd-bb.jpeg?q=60" style="position: relative;top:6px;left:15px;" height="160px">
+                <p style="text-align: center;">NIKE <br><b>Min 40-50% Off</b></p>
+            </div>
+            <div class="off3">
+                <img src="https://rukminim1.flixcart.com/image/340/340/xif0q/boxer/n/t/8/-original-imagh549bfpjyjtz.jpeg?q=60" style="position: relative;top:6px;left:15px;" height="160px" width="138px">
+                <p style="text-align: center;">NIKE <br><b>Min 40-50% Off</b></p>
+            </div>
+            <div class="off4">
+                <img src="https://rukminim1.flixcart.com/image/340/340/xif0q/mobile/3/5/l/-original-imaghx9qmgqsk9s4.jpeg?q=60" style="position: relative;top:6px;left:20px;" height="160px">
+                <p style="text-align: center;">NIKE <br><b>Min 40-50% Off</b></p>
+            </div>
+            <div class="off5">
+                <img src="https://rukminim1.flixcart.com/image/340/340/ksru0sw0/watch/g/z/m/1-ar11396-emporio-armani-men-original-imag69rdt9fgcff5.jpeg?q=60" style="position: relative;top:6px;left:30px;" height="160px">
+                <p style="text-align: center;">NIKE <br><b>Min 40-50% Off</b></p>
+            </div>
+            <div class="off6">
+                <img src="https://rukminim1.flixcart.com/image/110/110/kkec4280/book/2/b/8/the-girl-in-room-105-original-imafzr6nczgggedw.jpeg?q=80" style="position: relative;top:6px;left:30px;" height="160px">
+                <p style="text-align: center;">NIKE <br><b>Min 40-50% Off</b></p>
+            </div>
+            <div class="off7">
+                <img src="https://rukminim1.flixcart.com/image/110/110/l3ahpjk0/air-freshener/b/b/k/10-godreg-aer-frshner-gel-skynex-original-imagegfwhgxpukvj.jpeg?q=80" style="position: relative;top:6px;left:30px;" height="160px">
+                <p style="text-align: center;">NIKE <br><b>Min 40-50% Off</b></p>
             </div>
         </div>
 
     </div>
 </body>
-
 </html>
